@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on all devices -->
+    <title>My Portfolio</title> <!-- Browser tab title -->
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FontAwesome Icons (used for social icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ========================= HEADER SECTION ========================= -->
+    <header>
+        <!-- Brand Logo / Name -->
+        <div class="logo">AnmSri</div>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <!-- Navigation links scroll to different sections of the same page -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Day/Night Toggle UI (Only UI — no JS logic, decorative switch) -->
+        <label class="toggle">
+            <input type="checkbox" class="toggle-checkbox">
+            <div class="toggle-container">
+                <div class="knob"></div>
+            </div>
+        </label>
+    </header>
+    <!-- ========================= HEADER END ========================= -->
+
+
+
+    <!-- ========================= HOME SECTION ========================= -->
+    <section id="home" class="home">
+
+        <!-- Left side content: Intro, Bio, Buttons -->
+        <div class="home-content">
+            <h1>Hello, I'm <span>Anmol Srivastava</span></h1>
+            <p>Results-driven Software Engineer with hands-on experience in developing scalable, reliable, and performance-optimized systems.</p> 
+            <p>Strong in data structures, algorithms, and debugging, delivering high-quality, production-ready software in agile setups.</p>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <!-- GitHub Profile -->
+                <a href="https://github.com/Anmolsri2002" target="_blank"><i class="fab fa-github"></i></a>
+
+                <!-- LinkedIn Profile -->
+                <a href="https://www.linkedin.com/in/anmol-srivastava-aa34a422b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+            <!-- Resume Download Button -->
+            <a href="https://drive.google.com/uc?export=download&id=1dcHqmVfgwdtqLTy5FPF7y1nLsfXpuvOP" class="btn-resume" download>
+                Download CV
+            </a>
+        </div>
+
+        <!-- Right Side Image -->
+        <div class="profile-img">
+            <img src="./public/profile.png" alt="Profile Image">
+        </div>
+
+    </section>
+    <!-- ========================= HOME END ========================= -->
+
+
+
+    <!-- ========================= ABOUT SECTION ========================= -->
+    <section id="about" class="about-section">
+        <h2 class="heading">About Me</h2>
+
+        <div class="about-content">
+
+            <!-- Left side profile image -->
+            <div class="about-img">
+                <img src="./public/About.jpeg" alt="Profile Image">
+            </div>
+
+            <!-- Developer introduction, experience summary -->
+            <div class="about-text">
+                <p>
+                    Results-driven Full-Stack Java Developer with hands-on expertise in building scalable and production-ready web applications.
+                    Strong backend foundation in Spring Boot, JPA/Hibernate, and crafting RESTful APIs while working with complex database queries using JPQL and stored procedures.
+                    Skilled in front-end development with React.js and experienced with CI/CD pipelines, version control, and Linux environments.
+                    Passionate about solving real-world problems, writing clean code, and continuously improving products in agile teams.
+                </p>
+
+                <!-- “Read More” internal link (optional scroll anchor) -->
+                <a href="#more-about" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- ========================= ABOUT END ========================= -->
+
+
+
+    <!-- ========================= SKILLS SECTION ========================= -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <!-- Circular skill progress indicators -->
+        <div class="skills-wrapper">
+
+            <!-- Each skill block contains: SVG ring, percentage, skill name -->
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress html"></circle>
+                </svg>
+                <div class="skill-value">95%</div>
+                <p>HTML</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress css"></circle>
+                </svg>
+                <div class="skill-value">90%</div>
+                <p>CSS</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress js"></circle>
+                </svg>
+                <div class="skill-value">85%</div>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress java"></circle>
+                </svg>
+                <div class="skill-value">80%</div>
+                <p>Java</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress spring"></circle>
+                </svg>
+                <div class="skill-value">80%</div>
+                <p>Spring Boot</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress react"></circle>
+                </svg>
+                <div class="skill-value">85%</div>
+                <p>React.js</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress git"></circle>
+                </svg>
+                <div class="skill-value">75%</div>
+                <p>Git & GitHub</p>
+            </div>
+
+            <div class="circular-skill">
+                <svg class="progress-ring">
+                    <circle class="bg"></circle>
+                    <circle class="progress sql"></circle>
+                </svg>
+                <div class="skill-value">90%</div>
+                <p>SQL / Database</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========================= SKILLS END ========================= -->
+
+
+
+    <!-- ========================= CERTIFICATIONS SECTION ========================= -->
+    <section id="certifications" class="cert-section">
+
+        <h2>Relevant Certifications</h2>
+
+        <div class="cert-container">
+
+            <!-- Certification Card -->
+            <div class="cert-card">
+                <h3>Frontend Development</h3>
+                <p>Completed a 61.5-hour Web Development Bootcamp...</p>
+                <a href="https://drive.google.com/file/d/1t4aHeSahF6zDe6aB6YO3yQDGEgU7CQ1o/view?usp=sharing"
+                   target="_blank" class="cert-btn">
+                   View Certificate
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <h3>Spring Boot</h3>
+                <p>I completed an advanced course in Java Full-Stack Development...</p>
+                <a href="https://drive.google.com/file/d/1-ryTHNzr58IXZLWwmrl6neBJ3VlblK-e/view?usp=sharing"
+                   target="_blank" class="cert-btn">
+                   View Certificate
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <h3>JavaScript Programming</h3>
+                <p>I completed the Mastering JavaScript Fundamentals course...</p>
+                <a href="https://drive.google.com/file/d/1vu9rI8Bfas1ueAoaVskPSNCGJVUsqJtS/view?usp=sharing"
+                   target="_blank" class="cert-btn">
+                   View Certificate
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========================= CERTIFICATIONS END ========================= -->
+
+
+
+    <!-- ========================= PROJECTS SECTION ========================= -->
+    <section id="projects" class="projects-section">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Single Project Card -->
+            <div class="project-card">
+                <h3>AQI Estimator</h3>
+                <p>AQI Estimator is a web-based data analysis and visualization tool...</p>
+                <a href="https://github.com/Anmolsri2002/AQI-Estimator" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Online Reservation System</h3>
+                <p>I built a backend system for train reservation using Flask...</p>
+                <a href="https://github.com/Anmolsri2002/Online-Reservation-System" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Climate Pulse</h3>
+                <p>Climate Pulse is a responsive weather forecasting application...</p>
+                <a href="https://github.com/Anmolsri2002/WeatherApplication" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>QR Code Generator</h3>
+                <p>QR code is generated based on input URL using Node.js libraries...</p>
+                <a href="https://github.com/Anmolsri2002/QR-Code-Generator" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Simon Game</h3>
+                <p>Simon game challenges your memory by showing colored sequences...</p>
+                <a href="https://github.com/Anmolsri2002/Simon-Game" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Word Game</h3>
+                <p>A word-guessing mini-game built using Java programming...</p>
+                <a href="https://github.com/Anmolsri2002/Word-Game" class="project-btn" target="_blank">View Project</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- ========================= PROJECTS END ========================= -->
+
+
+
+    <!-- ========================= CONTACT SECTION ========================= -->
+    <section id="contact" class="contact-section">
+
+        <h2 class="contact-title">Contact Me</h2>
+
+        <!-- Contact form uses reset button so form clears without JS -->
+        <form class="contact-form" action="#contact">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+
+            <!-- Reset-type button clears all fields on click -->
+            <button type="reset" class="contact-btn">Send Message</button>
+        </form>
+
+    </section>
+    <!-- ========================= CONTACT END ========================= -->
+
+
+
+    <!-- ========================= FOOTER SECTION ========================= -->
+    <footer class="site-footer">
+
+        <!-- Small intro text -->
+        <p>Feel free to connect with me!</p>
+
+        <div class="footer-buttons">
+            <!-- Buttons with tooltip using CSS (data-tooltip attribute) -->
+            <a href="tel:+91 9555489941" class="footer-btn call-btn" data-tooltip="+91 95554 89941">Call Me</a>
+            <a href="mailto:anmol282002@gmail.com" class="footer-btn email-btn" data-tooltip="anmol282002@gmail.com">Email Me</a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="copyright">© 2025 Anmol Srivastava | All Rights Reserved</p>
+
+    </footer>
+    <!-- ========================= FOOTER END ========================= -->
+
+</body>
+</html>
