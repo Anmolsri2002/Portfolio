@@ -34,11 +34,12 @@
 
         <!-- Day/Night Toggle UI (Only UI — no JS logic, decorative switch) -->
         <label class="toggle">
-            <input type="checkbox" class="toggle-checkbox">
+            <input type="checkbox" class="toggle-checkbox" id="themeToggle">
             <div class="toggle-container">
                 <div class="knob"></div>
             </div>
         </label>
+
     </header>
     <!-- ========================= HEADER END ========================= -->
 
@@ -99,7 +100,7 @@
                 </p>
 
                 <!-- “Read More” internal link (optional scroll anchor) -->
-                <a href="#more-about" class="read-more-btn">Read More</a>
+                <a href="https://www.linkedin.com/in/anmol-srivastava-aa34a422b/" class="read-more-btn" target="_blank">Read More</a>
             </div>
         </div>
     </section>
@@ -120,7 +121,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress html"></circle>
                 </svg>
-                <div class="skill-value">95%</div>
+                <div class="skill-value" data-tooltip="95%">95%</div>
                 <p>HTML</p>
             </div>
 
@@ -129,7 +130,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress css"></circle>
                 </svg>
-                <div class="skill-value">90%</div>
+                <div class="skill-value" data-tooltip="90%">90%</div>
                 <p>CSS</p>
             </div>
 
@@ -138,7 +139,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress js"></circle>
                 </svg>
-                <div class="skill-value">85%</div>
+                <div class="skill-value" data-tooltip="85%">85%</div>
                 <p>JavaScript</p>
             </div>
 
@@ -147,7 +148,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress java"></circle>
                 </svg>
-                <div class="skill-value">80%</div>
+                <div class="skill-value" data-tooltip="80%">80%</div>
                 <p>Java</p>
             </div>
 
@@ -156,7 +157,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress spring"></circle>
                 </svg>
-                <div class="skill-value">80%</div>
+                <div class="skill-value" data-tooltip="80%">80%</div>
                 <p>Spring Boot</p>
             </div>
 
@@ -165,7 +166,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress react"></circle>
                 </svg>
-                <div class="skill-value">85%</div>
+                <div class="skill-value" data-tooltip="85%">85%</div>
                 <p>React.js</p>
             </div>
 
@@ -174,7 +175,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress git"></circle>
                 </svg>
-                <div class="skill-value">75%</div>
+                <div class="skill-value" data-tooltip="75%">75%</div>
                 <p>Git & GitHub</p>
             </div>
 
@@ -183,7 +184,7 @@
                     <circle class="bg"></circle>
                     <circle class="progress sql"></circle>
                 </svg>
-                <div class="skill-value">90%</div>
+                <div class="skill-value" data-tooltip="90%">90%</div>
                 <p>SQL / Database</p>
             </div>
 
@@ -203,7 +204,7 @@
             <!-- Certification Card -->
             <div class="cert-card">
                 <h3>Frontend Development</h3>
-                <p>Completed a 61.5-hour Web Development Bootcamp...</p>
+                <p>Completed a 61.5-hour Web Development Bootcamp covering all the core concepts of Frontend Technologies including HTML, CSS, JS, React.js, Node.js, Express.js, Postman etc..</p>
                 <a href="https://drive.google.com/file/d/1t4aHeSahF6zDe6aB6YO3yQDGEgU7CQ1o/view?usp=sharing"
                    target="_blank" class="cert-btn">
                    View Certificate
@@ -212,7 +213,7 @@
 
             <div class="cert-card">
                 <h3>Spring Boot</h3>
-                <p>I completed an advanced course in Java Full-Stack Development...</p>
+                <p>I completed an advanced course in Java Full-Stack Development where I get hands on experience on Spring Boot Microservices, Hibernate, JPA, and RESTful APIs.</p>
                 <a href="https://drive.google.com/file/d/1-ryTHNzr58IXZLWwmrl6neBJ3VlblK-e/view?usp=sharing"
                    target="_blank" class="cert-btn">
                    View Certificate
@@ -221,8 +222,8 @@
 
             <div class="cert-card">
                 <h3>JavaScript Programming</h3>
-                <p>I completed the Mastering JavaScript Fundamentals course...</p>
-                <a href="https://drive.google.com/file/d/1vu9rI8Bfas1ueAoaVskPSNCGJVUsqJtS/view?usp=sharing"
+                <p>I completed the Developing Interactive Websites with JavaScript course by Internshala where I understood & applied the fundamental concepts of JavaScript Foundation, Core JavaScript, Functions & Arrays, Object Oriented Programming, DOM Manipulation, Asynchronous Javascript, and Javascript and Browser modules.</p>
+                <a href="https://drive.google.com/file/d/1F6eSkqVGwvSXxKHO3BCWviNTn6n7EgPp/view?usp=sharing"
                    target="_blank" class="cert-btn">
                    View Certificate
                 </a>
@@ -244,37 +245,37 @@
             <!-- Single Project Card -->
             <div class="project-card">
                 <h3>AQI Estimator</h3>
-                <p>AQI Estimator is a web-based data analysis and visualization tool...</p>
+                <p>AQI Estimator is a web-based data analysis and visualization tool for environmental particulates built using Python Web Frameworks.</p>
                 <a href="https://github.com/Anmolsri2002/AQI-Estimator" class="project-btn" target="_blank">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Online Reservation System</h3>
-                <p>I built a backend system for train reservation using Flask...</p>
+                <p>I built a Full-Stack system for train reservation using Python Web Frameworks</p>
                 <a href="https://github.com/Anmolsri2002/Online-Reservation-System" class="project-btn" target="_blank">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Climate Pulse</h3>
-                <p>Climate Pulse is a responsive weather forecasting application...</p>
+                <p>Climate Pulse is a responsive weather forecasting application build using Servlet, JSP, JavaScript, and CSS.</p>
                 <a href="https://github.com/Anmolsri2002/WeatherApplication" class="project-btn" target="_blank">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>QR Code Generator</h3>
-                <p>QR code is generated based on input URL using Node.js libraries...</p>
+                <p>QR code is generated based on input URL using Node.js libraries.</p>
                 <a href="https://github.com/Anmolsri2002/QR-Code-Generator" class="project-btn" target="_blank">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Simon Game</h3>
-                <p>Simon game challenges your memory by showing colored sequences...</p>
+                <p>Simon game challenges your memory by showing colored sequences.</p>
                 <a href="https://github.com/Anmolsri2002/Simon-Game" class="project-btn" target="_blank">View Project</a>
             </div>
 
             <div class="project-card">
                 <h3>Word Game</h3>
-                <p>A word-guessing mini-game built using Java programming...</p>
+                <p>A word-guessing mini-game built using Java programming showing the perfect use of OOPS.</p>
                 <a href="https://github.com/Anmolsri2002/Word-Game" class="project-btn" target="_blank">View Project</a>
             </div>
 
@@ -321,6 +322,90 @@
 
     </footer>
     <!-- ========================= FOOTER END ========================= -->
+    <script>
+        const toggle = document.querySelector(".toggle-checkbox");
+
+        // ===== LIGHT THEME COLORS =====
+        const lightTheme = {
+            bodyBg: "#f4f6f7",
+            sectionBg: "#f4f6f7",
+            headerBg: "#ffffff",
+            cardBg: "#ffffff",
+            textDark: "#121212",
+            textLight: "#444",
+            accent: "#0077ff"
+        };
+
+        // ===== DARK THEME COLORS (YOUR ORIGINAL) =====
+        const darkTheme = {
+            bodyBg: "#182526",
+            sectionBg: "#182526",
+            headerBg: "#171717",
+            cardBg: "#45585a",
+            textDark: "#ffffff",
+            textLight: "#777",
+            accent: "#00eaff"
+        };
+
+        function applyTheme(theme) {
+            document.body.style.backgroundColor = theme.bodyBg;
+
+            document.querySelectorAll(
+                "header, .home, .about-section, .skills-section, .cert-section, .projects-section, .contact-section"
+            ).forEach(el => {
+                el.style.backgroundColor = theme.sectionBg;
+            });
+
+            document.querySelector("header").style.backgroundColor = theme.headerBg;
+
+            document.querySelectorAll(
+                ".project-card, .cert-card"
+            ).forEach(card => {
+                card.style.backgroundColor = theme.cardBg;
+            });
+
+            document.querySelectorAll(
+                "h1, h2, h3, .section-title, .heading, .contact-title"
+            ).forEach(text => {
+                text.style.color = theme.textDark;
+            });
+
+            document.querySelectorAll(
+                "p, nav ul li a"
+            ).forEach(text => {
+                text.style.color = theme.textLight;
+            });
+
+            document.querySelectorAll(
+                ".logo"
+            ).forEach(logo => {
+                logo.style.background = `linear-gradient(45deg, ${theme.accent}, #592c86)`;
+                logo.style.webkitBackgroundClip = "text";
+                logo.style.webkitTextFillColor = "transparent";
+            });
+        }
+
+        // ===== LOAD SAVED THEME =====
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light") {
+            toggle.checked = true;
+            applyTheme(lightTheme);
+        } else {
+            applyTheme(darkTheme);
+        }
+
+        // ===== TOGGLE LISTENER =====
+        toggle.addEventListener("change", () => {
+            if (toggle.checked) {
+                applyTheme(lightTheme);
+                localStorage.setItem("theme", "light");
+            } else {
+                applyTheme(darkTheme);
+                localStorage.setItem("theme", "dark");
+            }
+        });
+    </script>
+
 
 </body>
 </html>
